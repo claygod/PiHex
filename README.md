@@ -2,6 +2,7 @@
 PiHex Library generates a hexadecimal number sequence in the number Pi in the range from 0 to 10,000,000. To calculate using "Bailey-Borwein-Plouffe" algorithm, instructions that was published by David September 17, 2006.
 
 [![API documentation](https://godoc.org/github.com/claygod/PiHex?status.svg)](https://godoc.org/github.com/claygod/PiHex)
+[![Go Report Card](https://goreportcard.com/badge/github.com/claygod/PiHex)](https://goreportcard.com/report/github.com/claygod/PiHex)
 
 # Usage
 
