@@ -27,7 +27,7 @@ func New() *Pi {
 // start - start number
 // num - how to calculate the numbers
 //  Return:
-// slice bytes bytes 0 to 15
+// slice bytes 0 to 15
 func (pi *Pi) Get (start int, num int) []byte {
 	var out []byte
 	if start <= CLIMIT &&
