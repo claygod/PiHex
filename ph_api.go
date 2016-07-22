@@ -22,7 +22,7 @@ func New() *pi {
 	return pi
 }
 
-// Get 'num' hexadecimal digits in the number Pi since 'start' position.
+// Get - 'num' hexadecimal digits in the number Pi since 'start' position.
 // If the inputs exceed the permissible values, it returns an empty slice.
 //  Arguments:
 // start - start number
