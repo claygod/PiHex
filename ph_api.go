@@ -6,7 +6,6 @@ package PiHex
 // API
 
 import (
-	//"fmt"
 	"runtime"
 )
 
@@ -29,7 +28,7 @@ func New() *pi {
 // num - how to calculate the numbers
 //  Return:
 // slice bytes bytes 0 to 15
-func (pi *pi) GetHex(start int, num int) []byte {
+func (pi *pi) Get (start int, num int) []byte {
 	var out []byte
 	if start <= CLIMIT &&
 		start+num < CLIMIT &&
