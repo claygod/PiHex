@@ -51,5 +51,5 @@ The Bailey–Borwein–Plouffe formula (BBP formula) is a spigot algorithm for c
 
 # Implementation
 
-Plays Library is based on the publication "The BBP Algorithm for Pi" of David H. Baileyon September 17, 2006: http://www.davidhbailey.com/dhbpapers/bbp-alg.pdf
+Plays Library is based on the publication "The BBP Algorithm for Pi" of David H. Bailey on September 17, 2006: http://www.davidhbailey.com/dhbpapers/bbp-alg.pdf
 
