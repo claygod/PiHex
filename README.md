@@ -7,7 +7,7 @@ PiHex Library generates a hexadecimal number sequence in the number Pi in the ra
 # Usage
 
 An example of using the PiHex Library:
-```golang
+```go
 package main
 
 import (
@@ -17,7 +17,7 @@ import (
 
 func main() {
 	pi := PiHex.New()
-	fmt.Print("The first 20 digits of Pi (hexadecimal):\p", pi.Get(0, 20))
+	fmt.Print("The first 20 digits of Pi (hexadecimal): ", pi.Get(0, 20))
 }
 ```
 
