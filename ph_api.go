@@ -23,12 +23,6 @@ func New() *pi {
 }
 
 // Get - 'num' hexadecimal digits in the number Pi since 'start' position.
-// If the inputs exceed the permissible values, it returns an empty slice.
-//  Arguments:
-// start - start number
-// num - how to calculate the numbers
-//  Return:
-// slice bytes bytes 0 to 15
 func (pi *pi) Get(start int, num int) []byte {
 	var out []byte
 	if start <= CLIMIT &&
