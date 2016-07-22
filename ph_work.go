@@ -11,7 +11,7 @@ import (
 )
 
 // PiHex structure
-type pi struct {
+type Pi struct {
 	// Table exponents
 	exponent *[NTP]float64
 	// Channel to return the results of the goroutines
@@ -22,7 +22,7 @@ type pi struct {
 // The most time consuming calculations are performed in parallel. Arguments:
 // start - start number
 // num - how to calculate the numbers
-func (pi *pi) genHex(start int, num int) []byte {
+func (pi *Pi) genHex(start int, num int) []byte {
 	var d1 float64
 	var d2 float64
 	// Start of the goroutines
@@ -45,7 +45,7 @@ func (pi *pi) genHex(start int, num int) []byte {
 }
 
 // genExp - generate table exponents
-func (pi *pi) genExp() {
+func (pi *Pi) genExp() {
 	var exp [NTP]float64
 	exp[0] = 0.
 	exp[1] = 1.
@@ -60,7 +60,7 @@ func (pi *pi) genExp() {
 // m - 1,4,5,6 only
 // id - start number
 // id - coefficient
-func (pi *pi) series(m int, id int, kf float64) {
+func (pi *Pi) series(m int, id int, kf float64) {
 	var ak, p, s, t float64
 	//  Sum the series up to id
 	for k := 0; k < id; k++ {
@@ -87,7 +87,7 @@ func (pi *pi) series(m int, id int, kf float64) {
 	pi.ch <- s
 }
 
-func (pi *pi) expm(p float64, ak float64) float64 {
+func (pi *Pi) expm(p float64, ak float64) float64 {
 	var p1, pt, r float64
 	if ak == 1. {
 		return 0.
@@ -118,7 +118,7 @@ func (pi *pi) expm(p float64, ak float64) float64 {
 	return r
 }
 
-func (pi *pi) ihex(x float64, num int) []byte {
+func (pi *Pi) ihex(x float64, num int) []byte {
 	var out []byte
 	var y float64
 	y = math.Abs(x)
