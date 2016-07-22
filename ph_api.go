@@ -14,8 +14,8 @@ import (
 // algorithm, instructions that was published by David September 17, 2006.
 
 // New - create a new PiHex-struct
-func New() *pi {
-	pi := &pi{}
+func New() *Pi {
+	pi := &Pi{}
 	pi.genExp()
 	pi.ch = make(chan float64)
 	return pi
@@ -28,7 +28,7 @@ func New() *pi {
 // num - how to calculate the numbers
 //  Return:
 // slice bytes bytes 0 to 15
-func (pi *pi) Get (start int, num int) []byte {
+func (pi *Pi) Get (start int, num int) []byte {
 	var out []byte
 	if start <= CLIMIT &&
 		start+num < CLIMIT &&
