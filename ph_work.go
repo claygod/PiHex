@@ -10,7 +10,7 @@ import (
 	"math"
 )
 
-// PiHex structure
+// Pi structure
 type Pi struct {
 	// Table exponents
 	exponent *[NTP]float64
