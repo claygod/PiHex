@@ -9,10 +9,6 @@ import (
 	"runtime"
 )
 
-// PiHex Library generates a hexadecimal number sequence in the number Pi in
-// the range from 0 to 10,000,000. To calculate using "Bailey-Borwein-Plouffe"
-// algorithm, instructions that was published by David September 17, 2006.
-
 // New - create a new PiHex-struct
 func New() *Pi {
 	pi := &Pi{}
