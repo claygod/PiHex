@@ -1,9 +1,8 @@
-// Copyright © 2016 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
-
 package PiHex
 
 // PiHex
 // Configuration settings
+// Copyright © 2016 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
 
 // Editable parameters
 const (
