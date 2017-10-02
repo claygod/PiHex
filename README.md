@@ -17,7 +17,7 @@ import (
 
 func main() {
 	pi := PiHex.New()
-	fmt.Print("The first 20 digits of Pi (hexadecimal): ", pi.Get(0, 20))
+	fmt.Print("The first 9 digits of Pi (hexadecimal): ", pi.Get(0, 9))
 }
 ```
 
