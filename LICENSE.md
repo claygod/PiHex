@@ -1,6 +1,6 @@
 LICENSE
 
-Copyright (c) 2016 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
+Copyright (c) 2016-2019 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
 
 Permission is hereby granted, to any person obtaining a copy of this software and associated documentation files
 (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy,
