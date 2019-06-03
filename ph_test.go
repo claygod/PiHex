@@ -2,7 +2,7 @@ package PiHex
 
 // PiHex
 // Test
-// Copyright © 2016 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
+// Copyright © 2016-2019 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
 
 import (
 	"testing"
