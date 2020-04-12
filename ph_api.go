@@ -17,6 +17,7 @@ func New() *Pi {
 	pi := &Pi{}
 	pi.genExp()
 	pi.ch = make(chan float64)
+
 	return pi
 }
 
@@ -35,8 +36,10 @@ func (pi *Pi) Get(start int, num int) []byte {
 		num > 0 {
 		numcpu := runtime.NumCPU()
 		runtime.GOMAXPROCS(numcpu)
+
 		for i := 0; i < num; i = i + STEP {
 			c := num - i
+
 			if c > STEP {
 				out = append(out, pi.genHex(start+i, STEP)...)
 			} else {
@@ -44,5 +47,6 @@ func (pi *Pi) Get(start int, num int) []byte {
 			}
 		}
 	}
+
 	return out
 }

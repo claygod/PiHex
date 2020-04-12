@@ -33,6 +33,7 @@ func (pi *Pi) genHex(start int, num int) []byte {
 	// Getting the results of the goroutines
 	for i := 0; i < 4; i++ {
 		d2 = <-pi.ch
+
 		if d2 > 8. {
 			d1 += d2
 		} else {
@@ -41,6 +42,7 @@ func (pi *Pi) genHex(start int, num int) []byte {
 	}
 	pid := d1 - 10.
 	pid = pid - float64(int(pid)) + 1.
+
 	return pi.ihex(pid, num)
 }
 
@@ -49,9 +51,11 @@ func (pi *Pi) genExp() {
 	var exp [NTP]float64
 	exp[0] = 0.
 	exp[1] = 1.
+
 	for i := 2; i < NTP; i++ {
 		exp[i] = 2. * exp[i-1]
 	}
+
 	pi.exponent = &exp
 }
 
@@ -74,21 +78,26 @@ func (pi *Pi) series(m int, id int, kf float64) {
 	for k := id; k <= id+100; k++ {
 		ak = 8*float64(k) + float64(m)
 		t = math.Pow(16., float64(id-k)) / ak
+
 		if t < EPS {
 			break
 		}
+
 		s = s + t
 		s = s - float64(int(s))
 	}
 	s = s * kf
+
 	if kf == 4. {
 		s += 10.
 	}
+
 	pi.ch <- s
 }
 
 func (pi *Pi) expm(p float64, ak float64) float64 {
 	var p1, pt, r float64
+
 	if ak == 1. {
 		return 0.
 	}
@@ -109,12 +118,15 @@ func (pi *Pi) expm(p float64, ak float64) float64 {
 			r = r - float64(float64(int(r/ak))*ak)
 			p1 = p1 - pt
 		}
+
 		pt = 0.5 * pt
+
 		if pt >= 1. {
 			r = r * r
 			r = r - float64(float64(int(r/ak))*ak)
 		}
 	}
+
 	return r
 }
 
@@ -122,9 +134,11 @@ func (pi *Pi) ihex(x float64, num int) []byte {
 	var out []byte
 	var y float64
 	y = math.Abs(x)
+
 	for i := 0; i < num; i++ {
 		y = 16. * (y - math.Floor(y))
 		out = append(out, byte(y))
 	}
+
 	return out
 }
