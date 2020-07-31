@@ -2,7 +2,7 @@ package PiHex
 
 // PiHex
 // Configuration settings
-// Copyright © 2016-2019 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
+// Copyright © 2016-2020 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
 
 // Editable parameters
 const (

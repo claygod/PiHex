@@ -1,4 +1,4 @@
-// Copyright © 2016 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
+// Copyright © 2016-2020 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
 
 package PiHex
 
