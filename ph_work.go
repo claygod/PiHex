@@ -1,9 +1,8 @@
-// Copyright © 2016-2020 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
-
 package PiHex
 
 // PiHex
 // Work
+// Copyright © 2016-2020 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
 
 import (
 	//"fmt"
@@ -40,6 +39,7 @@ func (pi *Pi) genHex(start int, num int) []byte {
 			d1 -= d2
 		}
 	}
+
 	pid := d1 - 10.
 	pid = pid - float64(int(pid)) + 1.
 
@@ -86,6 +86,7 @@ func (pi *Pi) series(m int, id int, kf float64) {
 		s = s + t
 		s = s - float64(int(s))
 	}
+
 	s = s * kf
 
 	if kf == 4. {
