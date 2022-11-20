@@ -2,7 +2,7 @@ package PiHex
 
 // PiHex
 // Work
-// Copyright © 2016-2020 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
+// Copyright © 2016-2022 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
 
 import (
 	//"fmt"
