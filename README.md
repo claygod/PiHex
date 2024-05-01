@@ -56,4 +56,4 @@ Plays Library is based on the publication "The BBP Algorithm for Pi" of David H.
 
 ## Copyright
 
-Copyright © 2017-2022 Eduard Sesigin. All rights reserved. Contacts: claygod@yandex.ru
+Copyright © 2017-2024 Eduard Sesigin. All rights reserved. Contacts: claygod@yandex.ru

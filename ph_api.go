@@ -2,7 +2,7 @@ package PiHex
 
 // PiHex
 // API
-// Copyright © 2016-2022 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
+// Copyright © 2016-2024 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
 
 import (
 	"runtime"
@@ -23,10 +23,14 @@ func New() *Pi {
 
 // Get - 'num' hexadecimal digits in the number Pi since 'start' position.
 // If the inputs exceed the permissible values, it returns an empty slice.
-//  Arguments:
+//
+//	Arguments:
+//
 // start - start number
 // num - how to calculate the numbers
-//  Return:
+//
+//	Return:
+//
 // slice bytes 0 to 15
 func (pi *Pi) Get(start int, num int) []byte {
 	var out []byte
