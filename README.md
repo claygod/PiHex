@@ -41,6 +41,7 @@ Methods:
 -  *Get* - receiving a sequence of hexadecimal digits starting at the specified position and in the right quantity.
 
 Example:
+
 ```go
 pi := PiHex.New()
 x :=  pi.Get(1000, 5)
