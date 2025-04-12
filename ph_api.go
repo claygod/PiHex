@@ -2,7 +2,7 @@ package PiHex
 
 // PiHex
 // API
-// Copyright © 2016-2024 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
+// Copyright © 2016-2025 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
 
 import (
 	"runtime"
